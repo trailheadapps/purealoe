@@ -1,0 +1,27 @@
+<aura:component>
+    
+    <aura:attribute name="bundleItem" type="Object"/>
+    <aura:attribute name="index" type="Integer"/>
+    
+    <aura:registerEvent name="navigateToSObject" type="force:navigateToSObject"/>
+    <aura:registerEvent name="onDelete" type="c:bundleEvent"/>
+    <aura:registerEvent name="onChange" type="c:bundleEvent"/>
+
+	<div>
+	        <img src="{#v.bundleItem.pictureURL}" class="product"/>
+			<span class="title"><a href="" onclick="{!c.titleClickHandler}">{#v.bundleItem.title}</a></span>
+			<lightning:layout verticalAlign="center">
+					<lightning:layoutitem>
+							MSRP: <span class="price"><lightning:formattedNumber value="{#v.bundleItem.price}" style="currency"/></span>
+					</lightning:layoutitem>
+					<lightning:layoutitem>
+						Qty: 
+						<lightning:input type="number" name="qty" label="Qty" value="{#v.bundleItem.qty}" step="1"
+							onblur="{!c.qtyChangeHandler}"/>
+						<lightning:buttonIcon iconName="utility:delete" variant="bare" size="medium" class="toggle"
+												  onclick="{!c.deleteHandler}"/>
+					</lightning:layoutitem>
+			</lightning:layout>
+	</div>
+
+</aura:component>

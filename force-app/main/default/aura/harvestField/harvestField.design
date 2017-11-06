@@ -1,0 +1,3 @@
+<design:component label="Harvest Field">
+    <design:attribute name="height" default="700px" label="Card Height (for example: 650px):"/>
+</design:component>

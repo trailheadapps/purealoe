@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventDelivery xmlns="http://soap.sforce.com/2006/04/metadata">
+    <eventParameters>
+        <parameterName>FlowVersionName</parameterName>
+        <parameterValue>Bundle_Ordered-6</parameterValue>
+    </eventParameters>
+    <eventSubscription>Bundle_Ordered_6</eventSubscription>
+    <referenceData>Bundle_Ordered_6</referenceData>
+    <type>StartFlow</type>
+</EventDelivery>

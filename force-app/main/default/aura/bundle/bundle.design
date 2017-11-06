@@ -1,0 +1,4 @@
+<design:component label="Product Bundle">
+    <design:attribute name="showChart" label="Bundle Breakdown Chart" default="true"/>
+    <design:attribute name="isTileView" label="Tile View" default="true"/>
+</design:component>

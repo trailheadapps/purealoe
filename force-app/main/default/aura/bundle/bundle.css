@@ -1,0 +1,30 @@
+.THIS {
+    background-color: #FFF;
+    border-radius: .25rem;
+    padding: 20px 12px 12px 12px;
+}
+
+.THIS .header-fields>div {
+    padding-right: 20px;
+}
+
+.THIS .slds-icon_container {
+    border-radius: 2px;
+}
+
+.THIS .total-msrp {
+    width: 80px;
+    color: #6CB239;
+}
+
+.THIS .drop-zone {
+	box-sizing: border-box;
+	min-height: 200px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: transparent;
+}
+
+.THIS .drop-zone.active {
+    border-color:#6CB239;
+}

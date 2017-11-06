@@ -1,0 +1,65 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" controller="BundleController" access="global">
+
+    <ltng:require scripts="{!$Resource.countup}" />
+
+    <aura:attribute name="isTileView" type="Boolean" default="true" access="global"/>
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="bundleItems" type="Object[]" default="[]" />
+    <aura:attribute name="totalQty" type="Integer" default="0" />
+    <aura:attribute name="totalMSRP" type="Decimal" default="0" />
+    <aura:attribute name="showChart" type="Boolean" default="false" access="global" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div>
+        <lightning:layout>
+            <lightning:layoutitem>
+                    <p class="slds-text-heading_small slds-p-bottom_small">Bundle Items</p>
+            </lightning:layoutitem>
+        </lightning:layout>
+        <lightning:layout class="header"> 
+            <lightning:layoutitem class="slds-p-right_medium">
+                <lightning:icon iconName="custom:custom17"/>
+            </lightning:layoutitem>
+            <lightning:layoutitem flexibility="grow">
+                <lightning:layout class="header-fields">
+                    <lightning:layoutitem>
+                        <p class="slds-text-title slds-truncate slds-m-bottom_xx-small">Total MSRP</p>
+                        <p class="slds-text-heading_small slds-truncate total-msrp">
+                            $<span aura:id="totalMSRP">0</span>
+                        </p>
+                    </lightning:layoutitem>
+                    <lightning:layoutitem>
+                        <p class="slds-text-title slds-truncate slds-m-bottom_xx-small">Products</p>
+                        <p class="slds-text-heading_small slds-truncate ">{!v.bundleItems.length}</p>
+                    </lightning:layoutitem>
+                    <lightning:layoutitem padding="horizontal-large">
+                        <p class="slds-text-title slds-truncate slds-m-bottom_xx-small">Qty</p>
+                        <p class="slds-text-heading_small slds-truncate">{!v.totalQty}</p>
+                    </lightning:layoutitem>
+                    <aura:if isTrue="{!v.showChart}">
+                        <lightning:layoutitem padding="horizontal-large">
+                            <!-- <c:bundleChart bundleItems="{!v.bundleItems}" /> -->
+                        </lightning:layoutitem>
+                    </aura:if>
+                </lightning:layout>
+            </lightning:layoutitem>
+        </lightning:layout>
+
+        <div aura:id="dropZone" class="drop-zone" ondrop="{!c.dropHandler}" ondragover="{!c.dragOverHandler}" ondragleave="{!c.dragLeaveHandler}">
+
+                <div>
+                    <lightning:layout multipleRows="true">
+                        <aura:iteration items="{!v.bundleItems}" var="bundleItem" indexVar="index">
+                            <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="3">
+                                <c:bundleTile bundleItem="{#bundleItem}" index="{#index}" onDelete="{!c.bundleItemDeleteHandler}" onChange="{!c.bundleItemChangeHandler}" />
+                            </lightning:layoutItem>
+                        </aura:iteration>
+                    </lightning:layout>
+                </div>
+
+        </div>
+    </div>
+
+</aura:component>

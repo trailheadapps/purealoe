@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>height</name>
+                <value>600px</value>
+            </componentInstanceProperties>
+            <componentName>harvestFieldList</componentName>
+        </componentInstances>
+        <name>left</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>height</name>
+                <value>600px</value>
+            </componentInstanceProperties>
+            <componentName>harvestField</componentName>
+        </componentInstances>
+        <name>right</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Field Management</masterLabel>
+    <template>
+        <name>expandTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

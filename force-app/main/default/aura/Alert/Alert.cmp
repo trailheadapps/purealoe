@@ -1,0 +1,20 @@
+<aura:component implements="force:hasRecordId, flexipage:availableForRecordHome" access="global">
+
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="harvestField" type="Harvest_Field__c" />
+
+    <force:recordData aura:id="service" recordId="{!v.recordId}" targetFields="{!v.harvestField}" fields="['Id', 'Name', 'Crop__c', 'Size__c', 'Status__c', 'Yield__c', 'Map_Id__c', 'Irrigation__c']"/>
+
+    <aura:if isTrue="{!equals(v.harvestField.Status__c, 'Alert')}">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+            <h2>ALERT: Irrigation level below threshold</h2>
+        </div>
+    </aura:if>
+
+    <aura:if isTrue="{!equals(v.harvestField.Status__c, 'Warning')}">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+            <h2>WARNING: Irrigation level below threshold</h2>
+        </div>
+    </aura:if>
+
+</aura:component>

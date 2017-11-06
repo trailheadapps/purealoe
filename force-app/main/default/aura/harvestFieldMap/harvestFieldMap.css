@@ -1,0 +1,38 @@
+.THIS {
+    background-color: #EBE8DE;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.THIS .svg-wrapper {
+    transform: translate3d(0,0,0);
+}
+
+.THIS svg.map {
+
+}
+
+.THIS .slds-button-group {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.THIS lightning-slider {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    background-color: rgba(255,255,255,.5);
+    padding: 8px;
+    border-radius: 0.25rem;
+}
+
+.THIS lightning-slider > .slds-form-element {
+    width: 250px;
+}
+
+.THIS lightning-slider .slds-slider__value,
+.THIS lightning-slider label {
+    display: none;
+}

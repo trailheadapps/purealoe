@@ -1,0 +1,100 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    
+        <aura:attribute name="recordId" type="Id" />
+        <aura:attribute name="harvestField" type="Harvest_Field__c" />
+        <aura:attribute name="harvestColumns" type="List" />
+        <aura:attribute name="harvests" type="Object[]" default="[]" />
+        <aura:attribute name="irrigationColumns" type="List" />
+        <aura:attribute name="irrigationHistory" type="Object[]" default="[]" />
+        <aura:attribute name="height" type="String" default="700px" access="global" />
+    
+        <force:recordData aura:id="service" 
+            recordId="{!v.recordId}"
+            targetFields="{!v.harvestField}"
+            mode="EDIT"
+            fields="['Id', 'Name', 'Crop__c', 'Size__c', 'Status__c', 'Yield__c', 'Map_Id__c', 'Irrigation__c', 'Picture_URL__c']"
+            recordUpdated="{!c.recordUpdatedHandler}"/>
+    
+        <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+        <aura:handler event="ltng:selectSObject" action="{!c.recordChangeHandler}" />
+    
+        <div style="{! 'height: ' + v.height}">
+        <aura:if isTrue="{!v.recordId}">
+            <lightning:card >
+    
+                <aura:set attribute="title">
+                    <lightning:icon iconName="custom:custom5" /> {!v.harvestField.Name}
+                </aura:set>
+    
+                <aura:set attribute="actions">
+                    <lightning:button label="Details" onclick="{!c.navigateToRecordHome}"/>
+                </aura:set>
+    
+                <aura:if isTrue="{!equals(v.harvestField.Status__c, 'Alert')}">
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                        <h2>ALERT: Irrigation level below threshold</h2>
+                    </div>
+                </aura:if>
+    
+                <aura:if isTrue="{!equals(v.harvestField.Status__c, 'Warning')}">
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                        <h2>WARNING: Irrigation level below threshold</h2>
+                    </div>
+                </aura:if>
+                <lightning:layout class="details">
+                    <lightning:layoutItem >
+                        <img src="{!v.harvestField.Picture_URL__c}" class="crop"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem >
+                            <div class="form details">
+                                    <div>
+                                        <label>Crop:</label>{!v.harvestField.Crop__c}
+                                    </div>
+                                    <div>
+                                        <label>Size:</label>{!v.harvestField.Size__c}
+                                    </div>
+                                    <div>
+                                        <label>Yield:</label>{!v.harvestField.Yield__c} lbs
+                                    </div>
+                                </div>
+                                    </lightning:layoutItem>
+                </lightning:layout>
+    
+                <lightning:accordion >
+                    <lightning:accordionSection label="Irrigation">
+                        <lightning:layout >
+                            <lightning:layoutItem flexibility="grow">
+                                <div class="form">
+                                    <div>
+                                        <label>Level:</label>19.8%
+                                    </div>
+                                    <div>
+                                        <label>Status:</label>{!v.harvestField.Status__c}
+                                    </div>
+                                </div>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem >
+                                <lightning:input type="toggle" checked="{!v.harvestField.Irrigation__c}" label="Irrigation" onchange="{!c.toggleChangeHandler}" class="irrigation-toggle"/>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                        <lightning:datatable data="{!v.irrigationHistory}" columns="{!v.irrigationColumns}" />
+                    </lightning:accordionSection>
+                    <lightning:accordionSection label="Harvests">
+                        <lightning:datatable data="{!v.harvests}" columns="{!v.harvestColumns}" />
+                    </lightning:accordionSection>
+                    <lightning:accordionSection label="More Info">
+                    </lightning:accordionSection>
+                </lightning:accordion>
+                <img src="{!$Resource.karibu + '/ground_' + v.harvestField.Status__c + '.png'}" class="ground" />
+            </lightning:card>
+    
+            <aura:set attribute="else">
+                <lightning:card class="placeholder-card">
+                        <div class="placeholder slds-text-heading_medium">Select a field to see details</div>
+                </lightning:card>
+            </aura:set>
+                    
+        </aura:if>
+        </div>
+    
+    </aura:component>

@@ -1,0 +1,8 @@
+<design:component label="Two columns layout with expandable main area">
+    <flexipage:template>
+        <flexipage:region name="left" defaultWidth="MEDIUM">
+            <flexipage:formfactor type="MEDIUM" width="SMALL" />
+        </flexipage:region>
+        <flexipage:region name="right" defaultWidth="SMALL" />
+    </flexipage:template>
+</design:component>

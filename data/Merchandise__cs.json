@@ -1,0 +1,47 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Merchandise__c",
+                "referenceId": "Merchandise__cRef1"
+            },
+            "Title__c": "Soap Subscription",
+            "Description__c": "Have one 3-pack of soap mailed to you every quarter. That's a total of twelve soap bars (1 bar per month). \r\nYour purchase will fund a student's STEM program fees for fourteen months.",
+            "Category__c": "Gear",
+            "Price__c": 100,
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/subscription.png"
+        },
+        {
+            "attributes": {
+                "type": "Merchandise__c",
+                "referenceId": "Merchandise__cRef2"
+            },
+            "Title__c": "Aloe Vera Soap Bar",
+            "Description__c": "Handmade in small batches with all natural ingredients sourced within Africa. 1 individually wrapped bar. \r\nIngredients - shea butter, coconut oil, avocado oil, pure aloe vera extract, African croton seed oil, natural soap base, and essential oils: orange, bergamot, geranium, and lemongrass.",
+            "Category__c": "Gear",
+            "Price__c": 10,
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/aloe3.png"
+        },
+        {
+            "attributes": {
+                "type": "Merchandise__c",
+                "referenceId": "Merchandise__cRef3"
+            },
+            "Title__c": "Soap Box",
+            "Category__c": "Gear",
+            "Price__c": 100,
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/box.png"
+        },
+        {
+            "attributes": {
+                "type": "Merchandise__c",
+                "referenceId": "Merchandise__cRef4"
+            },
+            "Title__c": "Aloe Vera Soap (pack of 3)",
+            "Description__c": "Handmade in small batches with all natural ingredients sourced within Africa. Set of 3 individually wrapped soap bars. Ingredients - shea butter, coconut oil, avocado oil, pure aloe vera extract, African croton seed oil, natural soap base, and essential oils: orange, bergamot, geranium, and lemongrass.",
+            "Category__c": "Gear",
+            "Price__c": 25,
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/aloe1.png"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="HarvestFieldController" access="global">
+
+    <aura:attribute name="selectedItems" type="Object[]" default="[]" />
+    <aura:attribute name="popup" type="Boolean" default="false" />
+    <aura:attribute name="viewMode" type="String" default="tree" access="global" />
+    <aura:attribute name="height" type="String" default="700px" access="global" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="tableData" type="Object[]" default="[]" />
+    <aura:attribute name="treeData" type="Object" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+    <aura:registerEvent name="selectSObject" type="ltng:selectSObject" />
+
+    <div>
+        <div class="content" style="{! 'height: ' + v.height}">
+
+            <div class="list-wrapper">
+
+                <aura:if isTrue="{!equals(v.viewMode,'table')}">
+                    <lightning:datatable class="table" keyField="id" 
+                                         data="{!v.tableData}" 
+                                         columns="{!v.columns}" 
+                                         onrowselection="{!c.onRowSelection}"/>
+                </aura:if>
+
+                <aura:if isTrue="{!equals(v.viewMode,'tree')}">
+                    <lightning:tree items="{!v.treeData}" header="Fields" onselect="{!c.onTreeItemSelected}" />
+                </aura:if>
+
+                <c:harvestFieldMap aura:id="map" harvestFields="{!v.tableData}" onselectionchange="{!c.onMapRecordSelection}" />
+
+                <lightning:buttonGroup>
+                    <lightning:buttonIcon iconName="utility:right_align_text" onclick="{!c.onTreeView}" />
+                    <lightning:buttonIcon iconName="utility:table" onclick="{!c.onTableView}" />
+                    <lightning:buttonIcon iconName="utility:location" onclick="{!c.onMapView}" />
+                </lightning:buttonGroup>
+
+            </div>
+
+            <c:actionBar onaction="{!c.onAction}" />
+        </div>
+
+        <aura:if isTrue="{!v.popup}">
+            <c:irrigationDialog harvestFields="{!v.tableData}" selectedHarvestFields="{!v.selectedItems}" 
+                onclose="{!c.closeDialog}"
+                onsubmit="{!c.submitDialog}"/>
+        </aura:if>
+
+    </div>
+
+</aura:component>

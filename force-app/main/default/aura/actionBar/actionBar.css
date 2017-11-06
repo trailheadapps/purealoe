@@ -1,0 +1,19 @@
+.THIS {
+    background-color: #507C7F;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    padding: 4px 0;
+}
+
+.THIS .icon {
+    width: 28px;
+    /* height: 30px; */
+}
+
+.THIS .slds-button {
+    height: 50px;
+}
+
+.THIS .center {
+    text-align: center;
+}

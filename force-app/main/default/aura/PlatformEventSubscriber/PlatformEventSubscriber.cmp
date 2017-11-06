@@ -1,0 +1,10 @@
+<aura:component access="global" controller="SessionController">
+    
+    <aura:attribute name="eventName" type="String" />
+    
+    <ltng:require scripts="{!$Resource.cometd + '/cometd.js'}"
+                  afterScriptsLoaded="{!c.onJSLoaded}" />
+    
+    <aura:registerEvent name="onMessage" type="c:messageEvent" />
+    
+</aura:component>

@@ -1,0 +1,304 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef1"
+            },
+            "Name": "Pumpkin NW-1",
+            "Crop__c": "Pumpkin",
+            "Irrigation__c": false,
+            "Map_Id__c": "10",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png",
+            "Sensor_Id__c": "10",
+            "Size__c": "4 acres",
+            "Status__c": "Alert",
+            "Yield__c": "120"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef2"
+            },
+            "Name": "Aloe NE-3",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "3",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "3",
+            "Size__c": "3 acres",
+            "Status__c": "Alert",
+            "Yield__c": "200"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef3"
+            },
+            "Name": "Pumpkin NE-2",
+            "Crop__c": "Pumpkin",
+            "Irrigation__c": true,
+            "Map_Id__c": "9",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png",
+            "Sensor_Id__c": "9",
+            "Size__c": "3 acres",
+            "Status__c": "Warning",
+            "Yield__c": "25"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef4"
+            },
+            "Name": "Pumpkin NE-1",
+            "Crop__c": "Pumpkin",
+            "Irrigation__c": false,
+            "Map_Id__c": "16",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png",
+            "Sensor_Id__c": "16",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "25"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef5"
+            },
+            "Name": "Kale NW-2",
+            "Crop__c": "Kale",
+            "Irrigation__c": false,
+            "Map_Id__c": "12",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png",
+            "Sensor_Id__c": "12",
+            "Size__c": "1 acre",
+            "Status__c": "OK",
+            "Yield__c": "75"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef6"
+            },
+            "Name": "Aloe NE-2",
+            "Crop__c": "Aloe",
+            "Irrigation__c": false,
+            "Map_Id__c": "2",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "2",
+            "Size__c": "2 acres",
+            "Status__c": "Warning",
+            "Yield__c": "90"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef7"
+            },
+            "Name": "Aloe NW-1",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "5",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "5",
+            "Size__c": "3 acres",
+            "Status__c": "OK",
+            "Yield__c": "120"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef8"
+            },
+            "Name": "Kale NE-2",
+            "Crop__c": "Kale",
+            "Irrigation__c": false,
+            "Map_Id__c": "17",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png",
+            "Sensor_Id__c": "17",
+            "Size__c": "2 acres",
+            "Status__c": "Warning",
+            "Yield__c": "70"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef9"
+            },
+            "Name": "Aloe SE-1",
+            "Crop__c": "Aloe",
+            "Irrigation__c": false,
+            "Map_Id__c": "18",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "18",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "55"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef10"
+            },
+            "Name": "Aloe SE-3",
+            "Crop__c": "Aloe",
+            "Irrigation__c": false,
+            "Map_Id__c": "20",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "20",
+            "Size__c": "6 acres",
+            "Status__c": "OK",
+            "Yield__c": "30"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef11"
+            },
+            "Name": "Eggplant NE-2",
+            "Crop__c": "Eggplant",
+            "Irrigation__c": true,
+            "Map_Id__c": "13",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png",
+            "Sensor_Id__c": "13",
+            "Size__c": "3 acres",
+            "Status__c": "Warning",
+            "Yield__c": "80"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef12"
+            },
+            "Name": "Eggplant NW-1",
+            "Crop__c": "Eggplant",
+            "Irrigation__c": false,
+            "Map_Id__c": "14",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png",
+            "Sensor_Id__c": "14",
+            "Size__c": "1 acre",
+            "Status__c": "OK",
+            "Yield__c": "84"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef13"
+            },
+            "Name": "Aloe NE-1",
+            "Crop__c": "Aloe",
+            "Irrigation__c": false,
+            "Map_Id__c": "1",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "1",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "100"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef14"
+            },
+            "Name": "Aloe NW-2",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "6",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "6",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "35"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef15"
+            },
+            "Name": "Aloe NE-4",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "4",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "4",
+            "Size__c": "3 acres",
+            "Status__c": "OK",
+            "Yield__c": "75"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef16"
+            },
+            "Name": "Kale NE-1",
+            "Crop__c": "Kale",
+            "Irrigation__c": false,
+            "Map_Id__c": "11",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png",
+            "Sensor_Id__c": "11",
+            "Size__c": "4 acres",
+            "Status__c": "OK",
+            "Yield__c": "60"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef17"
+            },
+            "Name": "Aloe NW-4",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "8",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "8",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "50"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef18"
+            },
+            "Name": "Aloe NW-3",
+            "Crop__c": "Aloe",
+            "Irrigation__c": true,
+            "Map_Id__c": "7",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "7",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "40"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef19"
+            },
+            "Name": "Eggplant NE-1",
+            "Crop__c": "Eggplant",
+            "Irrigation__c": true,
+            "Map_Id__c": "15",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png",
+            "Sensor_Id__c": "15",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "60"
+        },
+        {
+            "attributes": {
+                "type": "Harvest_Field__c",
+                "referenceId": "Harvest_Field__cRef20"
+            },
+            "Name": "Aloe SE-2",
+            "Crop__c": "Aloe",
+            "Irrigation__c": false,
+            "Map_Id__c": "19",
+            "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
+            "Sensor_Id__c": "19",
+            "Size__c": "2 acres",
+            "Status__c": "OK",
+            "Yield__c": "10"
+        }
+    ]
+}

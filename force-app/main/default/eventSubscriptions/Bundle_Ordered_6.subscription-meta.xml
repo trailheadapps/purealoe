@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventSubscription xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <eventType>Bundle_Ordered__e</eventType>
+    <referenceData>Bundle_Ordered_6</referenceData>
+</EventSubscription>

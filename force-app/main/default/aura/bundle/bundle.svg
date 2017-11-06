@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#CFCE63" x="0" y="0" width="80" height="80" rx="4"></rect>
+        <g id="custom42" transform="translate(10.000000, 12.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M54,0 L6,0 C2.7,0 0,2.7 0,6 L0,12 C0,13.1 0.9,14 2,14 L58,14 C59.1,14 60,13.1 60,12 L60,6 C60,2.7 57.3,0 54,0 Z M54,20 L6,20 C4.9,20 4,20.9 4,22 L4,50 C4,53.3 6.7,56 10,56 L50,56 C53.3,56 56,53.3 56,50 L56,22 C56,20.9 55.1,20 54,20 Z M41,29 C41,30.6 39.7,32 38,32 L22,32 C20.4,32 19,30.7 19,29 C19,27.4 20.3,26 22,26 L38,26 C39.7,26 41,27.3 41,29 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<aura:component>
+
+    <aura:registerEvent name="onaction" type="c:actionEvent" />
+
+    <div class="action-bar">
+        <lightning:layout>
+            <lightning:layoutItem flexibility="grow" class="center">
+                <lightning:button variant="base" onclick="{!c.onClick}">
+                        <img src="{!$Resource.karibu + '/icon_irrigation.svg'}" class="icon" />
+                </lightning:button>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" class="center">
+                    <lightning:button variant="base">
+                    <img src="{!$Resource.karibu + '/icon_seed.svg'}" class="icon" />
+                </lightning:button>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" class="center">
+                    <lightning:button variant="base">
+                    <img src="{!$Resource.karibu + '/icon_level.svg'}" class="icon" />
+                </lightning:button>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" class="center">
+                    <lightning:button variant="base">
+                    <img src="{!$Resource.karibu + '/icon_labor.svg'}" class="icon" />
+                </lightning:button>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" class="center">
+                    <lightning:button variant="base">
+                    <img src="{!$Resource.karibu + '/icon_bug.svg'}" class="icon" />
+                </lightning:button>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>	

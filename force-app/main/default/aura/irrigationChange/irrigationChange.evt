@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template" access="global">
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="mapId" type="String"/>
+    <aura:attribute name="status" type="Boolean"/>
+</aura:event>

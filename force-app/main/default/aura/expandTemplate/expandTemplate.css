@@ -1,0 +1,24 @@
+.THIS {
+}
+
+.THIS .left {
+    padding-right: 8px;
+}
+
+.THIS .right {
+    padding-left: 8px;
+}
+
+.THIS.fullscreen .left {
+    padding-right: 0;
+}
+
+.THIS.fullscreen .right {
+    display: none;
+}
+
+.THIS .toggle {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+}

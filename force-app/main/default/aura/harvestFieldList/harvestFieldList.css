@@ -1,0 +1,68 @@
+.THIS {
+    background-color: #FAFAF9;
+    border-radius: 0.25rem;    
+    border: 1px solid rgb(221, 219, 218);
+    border-radius: .25rem;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+}
+
+.THIS .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.THIS .list-wrapper {
+    position: relative;
+    flex: 2;
+    overflow: scroll;
+}
+
+.THIS .slds-button-group {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.THIS .table {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+.THIS lightning-tree {
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    right: 12px;
+}
+
+.THIS .action-bar {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.THIS .form {
+    margin: 20px 0;
+}
+
+.THIS .slds-modal__header .icon {
+    height: 28px;
+    margin-right: 8px;
+}
+
+.THIS .slds-modal__header .slds-text-heading_medium {
+    display: inline-block;
+}
+
+.THIS .slds-button-group {
+    background: #FFFFFF;
+    border-radius: .25rem;
+}
+
+.THIS .slds-tree_container {
+    max-width: inherit;
+}

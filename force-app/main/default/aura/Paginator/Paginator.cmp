@@ -1,0 +1,25 @@
+<aura:component >
+
+    <aura:attribute name="page" type="integer"/>
+    <aura:attribute name="pages" type="integer"/>
+    <aura:attribute name="total" type="integer"/>
+    <aura:attribute name="label" type="String" default="items"/>
+    
+    <aura:registerEvent name="nextPage" type="c:PaginatorEvent"/>
+    <aura:registerEvent name="previousPage" type="c:PaginatorEvent"/>
+    
+    <div class="container">
+        <div class="left">
+            <aura:if isTrue="{!v.page > 1}">
+                <lightning:buttonIcon iconName="utility:chevronleft" variant="border-filled" onclick="{!c.previousPage}"/>
+            </aura:if>
+        </div>
+        <div class="centered">{!v.page} of {!v.pages}</div>
+        <div class="right">
+            <aura:if isTrue="{!v.page &lt; v.pages}">
+                <lightning:buttonIcon iconName="utility:chevronright" variant="border-filled" onclick="{!c.nextPage}"/>
+            </aura:if>
+        </div>
+	</div>
+    
+</aura:component>

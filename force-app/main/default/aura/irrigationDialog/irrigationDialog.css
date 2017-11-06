@@ -1,0 +1,11 @@
+.THIS {
+    /* height: 640px; */
+}
+
+.THIS .slds-form-element {
+    padding: 4px 0;
+}
+
+.THIS lightning-dual-listbox {
+    width: 100%;
+}

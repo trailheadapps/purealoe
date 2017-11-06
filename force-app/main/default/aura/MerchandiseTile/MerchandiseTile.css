@@ -1,0 +1,34 @@
+.THIS {
+    cursor: -webkit-grab;
+    border-bottom: solid 1px #d8dde6;
+    width: 100%;
+}
+
+.THIS a {
+	color: inherit;
+}
+
+.THIS:active {
+    cursor: -webkit-grabbing;
+}
+
+.THIS img.merchandise {
+    height: auto;
+    min-height: 50px;
+    width: 50px;
+}
+
+.THIS img {
+    max-width: initial;
+    border-radius: 0.25rem;
+}
+
+.THIS .price,
+.THIS .title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.THIS .price {
+    color: #6CB239;
+}

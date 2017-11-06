@@ -1,0 +1,43 @@
+<aura:component>
+
+    <aura:attribute name="harvestFields" type="Object[]" default="[]" access="global" />
+    <aura:attribute name="selectedHarvestFields" type="Object[]" default="[]" access="global" />
+
+    <aura:attribute name="options" type="Object[]" access="global" />
+    <aura:attribute name="value" type="String[]" access="global" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <aura:registerEvent name="onclose" type="c:dialogEvent" />
+    <aura:registerEvent name="onsubmit" type="c:dialogEvent" />
+
+    <div>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                        <lightning:buttonIcon iconName="utility:close" variant="bare-inverse" size="large" onclick="{!c.closeDialog}"/>
+                        <span class="slds-assistive-text">Close</span>
+                      </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Irrigation</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+                    <lightning:dualListbox name="Select fields to irrigate" label="Select fields to irrigate" sourceLabel="Available Fields"
+                        selectedLabel="Selected Fields" options="{!v.options}" value="{!v.value}" onchange="{!c.handleListChange}"/>
+
+                    <div class="form">
+                        <lightning:slider label="Duration (minutes)" step="10" value="90" min="0" max="180" />
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeDialog}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.submitDialog}">Submit</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+
+</aura:component>

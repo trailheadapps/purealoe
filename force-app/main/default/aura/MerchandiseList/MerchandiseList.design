@@ -1,0 +1,3 @@
+<design:component label="Merchandise List">
+    <design:attribute name="pageSize" default="8" label="Records per page"/>
+</design:component>

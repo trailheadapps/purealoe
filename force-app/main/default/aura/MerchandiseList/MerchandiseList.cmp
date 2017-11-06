@@ -1,0 +1,32 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" 
+                controller="MerchandiseController" access="global">
+    
+    <aura:attribute name="items" type="Merchandise__c[]"/>
+    <aura:attribute name="filterObject" type="Object" access="global"/>
+    <aura:attribute name="pageSize" type="Integer" default="8" access="global"/>
+    <aura:attribute name="page" type="Integer"/>
+    <aura:attribute name="pages" type="Integer"/>
+    <aura:attribute name="total" type="Integer"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:card>
+        
+        <aura:set attribute="title">
+            <img src="{!$Resource.karibu + '/aloe.png'}" class="icon" /> {! 'Merchandise List (' + v.total + ')'}
+        </aura:set>
+
+        <aura:set attribute="actions">
+                <c:paginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" label="products"
+                             previousPage="{!c.onPreviousPage}" nextPage="{!c.onNextPage}"/>
+        </aura:set>
+
+        <aura:iteration items="{!v.items}" var="item" indexVar="index">
+		    <lightning:layoutitem size="12">
+		        <c:merchandiseTile merchandise="{#item}" index="{#index}"/>
+		    </lightning:layoutitem>
+		</aura:iteration>
+        
+    </lightning:card>
+    
+</aura:component>

@@ -1,0 +1,78 @@
+.THIS .slds-card {
+    height: 100%;
+}
+
+.THIS label {
+    display: inline-block;
+    width: 60px;
+}
+
+.THIS .form {
+    margin: 0 34px 20px 12px;
+}
+
+.THIS .form.details {
+    margin-top: 12px;
+}
+
+.THIS .form > div {
+    margin-bottom: 4px;
+}
+
+.THIS .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.THIS .alert {
+    padding: 8px 12px;
+    /* font-size: 14px; */
+}
+
+.THIS .ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    width: 100%;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.THIS .placeholder-card {
+    position: relative;
+}
+
+.THIS .placeholder {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 20px;
+    right: 20px;
+}
+
+.THIS .crop {
+    height: 80px;
+}
+
+.THIS .slds-p-around--small {
+    padding-bottom: 0;
+    padding-right: 0;
+
+}
+
+.THIS .details {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.THIS .slds-icon-custom-custom5 {
+    margin-right: 8px;
+}
+
+.THIS .irrigation-toggle {
+    margin-top: -14px;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,23 @@
+<aura:component>
+    
+    <aura:attribute name="merchandise" type="Merchandise__c"/>
+    <aura:attribute name="index" type="Integer"/>
+
+    <aura:registerEvent name="navigateToSObject" type="force:navigateToSObject"/>
+    
+    <div data-id="{#v.index}" draggable="true" ondragstart="{!c.dragStart}" class="slds-p-left_small">
+        <lightning:layout verticalAlign="center">
+            <lightning:layoutitem >
+                <lightning:icon iconName="utility:rows" size="x-small"></lightning:icon> 
+            </lightning:layoutitem>
+            <lightning:layoutitem padding="around-small">
+                <img src="{#v.merchandise.Picture_URL__c}" class="merchandise"/>
+            </lightning:layoutitem>
+            <lightning:layoutitem flexibility="grow">
+                <div class="title slds-truncate"><a href="" onclick="{!c.titleClickHandler}">{#v.merchandise.Title__c}</a></div>
+                <div>MSRP: <span class="price"><lightning:formattedNumber value="{#v.merchandise.Price__c}" style="currency" /></span></div>
+            </lightning:layoutitem>
+        </lightning:layout>
+    </div> 
+    
+</aura:component>
