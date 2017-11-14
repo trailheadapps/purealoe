@@ -28,7 +28,7 @@
                 <![CDATA[
     
                 <?xml version="1.0" encoding="UTF-8"?>
-                <svg class="map" width="900px" viewBox="0 0 1272 907" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg aura:id="map" class="map" width="900px" viewBox="0 0 1272 907" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
                     <title>Slice</title>
                     <desc>Created with Sketch.</desc>

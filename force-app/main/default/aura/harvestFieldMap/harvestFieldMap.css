@@ -7,10 +7,7 @@
 
 .THIS .svg-wrapper {
     transform: translate3d(0,0,0);
-}
-
-.THIS svg.map {
-
+    transform-origin: top left;
 }
 
 .THIS .slds-button-group {
