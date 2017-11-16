@@ -1,6 +1,6 @@
 scratch-org-def: config/project-scratch-def.json
 assign-permset: true
-permset-name: dreamhouse
+permset-name: purealoe
 run-apex-tests: false
 delete-scratch-org: false
 show-scratch-org-url: true
