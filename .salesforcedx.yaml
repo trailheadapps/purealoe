@@ -7,3 +7,4 @@ show-scratch-org-url: true
 data-plans:
   - ./data/Harvest_Field__c-plan.json
   - ./data/Merchandise__c-plan.json
+open-path: one/one.app#/n/Field_Management
