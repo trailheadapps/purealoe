@@ -21,16 +21,27 @@
     },
 
     messageHandler: function (component, event) {
-        var bundle = component.get("v.record");
-        var payload = event.getParam("message");
-        if (payload.Bundle_Id__c === bundle.Id) {
-            bundle.Status__c = "Ordered by Distributor";
-            bundle.Account__c = payload.Account_Id__c;
-            bundle.Date_Ordered__c = new Date().toLocaleDateString();
-            component.set("v.record", bundle);
-            component.find("accountService").reloadRecord();
-            // No need to save the record because there is also an Apex listener for the Bundle_Ordered__e event
-
+        console.log('bundlePathController got message');
+        try {
+            var bundle = component.get("v.record");
+            var message = event.getParam("message");
+            if (message && message.data && message.data.sobject) {
+                var bundleId = message.data.sobject.Id;
+                var status = message.data.sobject.Status__c;
+                console.log(status);
+                if (bundleId === bundle.Id && status !== bundle.Status__c) {
+                    //bundle.Status__c = status;
+                    //bundle.Account__c = payload.Account_Id__c;
+                    //bundle.Date_Ordered__c = new Date().toLocaleDateString();
+                    //component.set("v.record", bundle);
+                    component.find("bundleRecord").reloadRecord(true);
+                    //component.find("accountService").reloadRecord();
+                    // No need to save the record because there is also an Apex listener for the Bundle_Ordered__e event
+                }
+            }
+        } catch (e) {
+            console.log("*** Exception");
+            console.log(e);
         }
     }
 

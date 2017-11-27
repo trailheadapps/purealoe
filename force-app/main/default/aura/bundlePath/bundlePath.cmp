@@ -20,9 +20,10 @@
                       targetFields="{!v.account}"
 					  fields="['Id', 'Name']" />
 
-    <!-- <c:PlatformEventSubscriber eventName="Bundle_Ordered__e" onMessage="{!c.messageHandler}"/> -->
+    <c:PlatformEventSubscriber channel="/topic/BundleStatusChange" onMessage="{!c.messageHandler}"/>
     
     <c:path steps="{!v.steps}" currentStep="{!v.record.Status__c}" stepChange="{!c.onStepChange}"/>
+
     <aura:if isTrue="{! equals(v.record.Status__c, 'Ordered by Distributor')}">
         <lightning:layout>
             <lightning:layoutItem flexibility="grow" padding="around-small">Ordered by: <a>{!v.account.Name}</a></lightning:layoutItem>

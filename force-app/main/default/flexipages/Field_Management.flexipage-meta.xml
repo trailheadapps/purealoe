@@ -4,7 +4,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>height</name>
-                <value>600px</value>
+                <value>620px</value>
             </componentInstanceProperties>
             <componentName>harvestFieldList</componentName>
         </componentInstances>
@@ -15,7 +15,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>height</name>
-                <value>600px</value>
+                <value>620px</value>
             </componentInstanceProperties>
             <componentName>harvestField</componentName>
         </componentInstances>
