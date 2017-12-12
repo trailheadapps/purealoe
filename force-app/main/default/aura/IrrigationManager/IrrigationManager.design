@@ -1,0 +1,7 @@
+<design:component >
+    <design:attribute name="startTime" label="Irrigation start time"/>
+    <design:attribute name="duration" label="Irrigation duration"/>
+    <design:attribute name="ldsRecId" label="LDS RecId"/>
+    <design:attribute name="msgText" label="Alert message text" />
+    <design:attribute name="overrideCount" label="Current count of overrides" />
+</design:component>

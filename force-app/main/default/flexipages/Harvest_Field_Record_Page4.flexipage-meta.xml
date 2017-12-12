@@ -8,6 +8,9 @@
             </componentInstanceProperties>
             <componentName>force:highlightsPanel</componentName>
         </componentInstances>
+        <componentInstances>
+            <componentName>Alert</componentName>
+        </componentInstances>
         <mode>Replace</mode>
         <name>header</name>
         <type>Region</type>
@@ -21,9 +24,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
-            <componentName>Alert</componentName>
-        </componentInstances>
         <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
@@ -75,6 +75,28 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>flowArguments</name>
+                <value>[{"label":"recordId","dataType":"String","supportsRecordId":true,"value":"{!Record.Id}"}]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>flowLayout</name>
+                <value>oneColumn</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>flowName</name>
+                <value>IrrigationManagement</value>
+            </componentInstanceProperties>
+            <componentName>flowruntime:interview</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.Status__c}</leftValue>
+                    <operator>NE</operator>
+                    <rightValue>OK</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
         <componentInstances>
             <componentName>harvestFieldMapNav</componentName>
         </componentInstances>
