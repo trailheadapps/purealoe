@@ -9,7 +9,7 @@
                     default="{! 'Alert! Irrigation for ' + v.harvestRecord.Name + ' will begin at ' + v.startTime + ', and is scheduled to last '+ v.duration + ' minutes.'}"/>
     <aura:attribute name="overrideCount" type="Integer" default="{!v.harvestRecord.Irrigation_Overrides__c}"/>
     
-    <force:recordData aura:id="dataService" recordId="{!v.ldsRecId}" targetFields="{!v.harvestRecord}" fields="['Id', 'Name', 'Status__c', 'Irrigation__c', 'Irrigation_Overrides__c']"/>
+    <force:recordData aura:id="dataService" recordId="{!v.ldsRecId}" targetFields="{!v.harvestRecord}" fields="Id, Name, Status__c, Irrigation__c, Irrigation_Overrides__c"/>
     
 	<lightning:card title="Adjust Field Irrigation" iconName="standard:calibration">
     	<lightning:accordion activeSectionName="settings">
