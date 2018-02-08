@@ -1,0 +1,36 @@
+<aura:component implements="lightning:availableForFlowScreens">
+	<aura:attribute name="ldsRecId" type="String"/>
+    <aura:attribute name="startTime" type="String" />
+    <aura:attribute name="duration" type="String" />
+    <aura:attribute name="harvestRecord" type="Harvest_Field__c"/>
+    <aura:attribute name="msgText" type="String" default="{! v.defaultMsg +' '+ v.addedMsgText}"/>
+    <aura:attribute name="addedMsgText" type="String" default=""/>
+    <aura:attribute name="defaultMsg" type="String" 
+                    default="{! 'Alert! Irrigation for ' + v.harvestRecord.Name + ' will begin at ' + v.startTime + ', and is scheduled to last '+ v.duration + ' minutes.'}"/>
+    <aura:attribute name="overrideCount" type="Integer" default="{!v.harvestRecord.Irrigation_Overrides__c}"/>
+    
+    <force:recordData aura:id="dataService" recordId="{!v.ldsRecId}" targetFields="{!v.harvestRecord}" fields="Id, Name, Status__c, Irrigation__c, Irrigation_Overrides__c"/>
+    
+	<lightning:card title="Adjust Field Irrigation" iconName="standard:calibration">
+    	<lightning:accordion activeSectionName="settings">
+        	<lightning:accordionSection name="settings" label="Irrigation Settings">
+                <lightning:input class="slds-p-bottom_small" type="time" name="time" label="Start Time" value="{!v.startTime}" required="true"/>
+                <lightning:slider label="Duration (Minutes)" min="0" max="180" step="10" value="{!v.duration}"/>
+            </lightning:accordionSection>
+            <lightning:accordionSection name="alertMsg" label="Irrigation Alert Message">
+                <lightning:input aura:id="msg" name="addedMsg" label="Additional text:" type="text"
+                                 placeholder="(Optional)"
+                                 value="{!v.addedMsgText}"/>
+                <div class="slds-p-bottom_small"/>
+                <div class="slds-form-element">
+                    <span class="slds-form-element__label">Message preview:</span>
+                    <div class="slds-form-element__control slds-border_bottom">
+                        <div class="slds-form-element__static">
+                            <p>{!v.msgText}</p>
+                        </div>
+                    </div>
+                </div>
+            </lightning:accordionSection>
+        </lightning:accordion>
+    </lightning:card>
+</aura:component>

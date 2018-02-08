@@ -11,3 +11,4 @@ selenium-client-jars/
 test/artifacts
 export/
 IlluminatedCoud/
+.vscode

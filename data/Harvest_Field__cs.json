@@ -13,7 +13,8 @@
             "Sensor_Id__c": "10",
             "Size__c": "4 acres",
             "Status__c": "Alert",
-            "Yield__c": "120"
+            "Yield__c": "120",
+            "Irrigation_Overrides__c": "10"
         },
         {
             "attributes": {
@@ -28,7 +29,8 @@
             "Sensor_Id__c": "3",
             "Size__c": "3 acres",
             "Status__c": "Alert",
-            "Yield__c": "200"
+            "Yield__c": "200",
+            "Irrigation_Overrides__c": "3"
         },
         {
             "attributes": {
@@ -43,7 +45,8 @@
             "Sensor_Id__c": "9",
             "Size__c": "3 acres",
             "Status__c": "Warning",
-            "Yield__c": "25"
+            "Yield__c": "25",
+            "Irrigation_Overrides__c": "13"
         },
         {
             "attributes": {
@@ -58,7 +61,8 @@
             "Sensor_Id__c": "16",
             "Size__c": "2 acres",
             "Status__c": "OK",
-            "Yield__c": "25"
+            "Yield__c": "25",
+            "Irrigation_Overrides__c": "9"
         },
         {
             "attributes": {
@@ -88,7 +92,8 @@
             "Sensor_Id__c": "2",
             "Size__c": "2 acres",
             "Status__c": "Warning",
-            "Yield__c": "90"
+            "Yield__c": "90",
+            "Irrigation_Overrides__c": "12"
         },
         {
             "attributes": {
@@ -118,7 +123,8 @@
             "Sensor_Id__c": "17",
             "Size__c": "2 acres",
             "Status__c": "Warning",
-            "Yield__c": "70"
+            "Yield__c": "70",
+            "Irrigation_Overrides__c": "8"
         },
         {
             "attributes": {
@@ -133,7 +139,8 @@
             "Sensor_Id__c": "18",
             "Size__c": "2 acres",
             "Status__c": "OK",
-            "Yield__c": "55"
+            "Yield__c": "55",
+            "Irrigation_Overrides__c": "6"
         },
         {
             "attributes": {
@@ -163,7 +170,8 @@
             "Sensor_Id__c": "13",
             "Size__c": "3 acres",
             "Status__c": "Warning",
-            "Yield__c": "80"
+            "Yield__c": "80",
+            "Irrigation_Overrides__c": "10"
         },
         {
             "attributes": {
@@ -208,7 +216,8 @@
             "Sensor_Id__c": "6",
             "Size__c": "2 acres",
             "Status__c": "OK",
-            "Yield__c": "35"
+            "Yield__c": "35",
+            "Irrigation_Overrides__c": "12"
         },
         {
             "attributes": {
@@ -238,7 +247,8 @@
             "Sensor_Id__c": "11",
             "Size__c": "4 acres",
             "Status__c": "OK",
-            "Yield__c": "60"
+            "Yield__c": "60",
+            "Irrigation_Overrides__c": "9"
         },
         {
             "attributes": {
@@ -283,7 +293,8 @@
             "Sensor_Id__c": "15",
             "Size__c": "2 acres",
             "Status__c": "OK",
-            "Yield__c": "60"
+            "Yield__c": "60",
+            "Irrigation_Overrides__c": "10"
         },
         {
             "attributes": {
