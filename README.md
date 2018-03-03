@@ -4,6 +4,12 @@
 
 Pure Aloe is a  sample application that demonstrates the power of the Salesforce Platform to build modern apps fast. It is a rebranded and anonymized version of the application showcased during the Dreamforce 17 developer keynote.
 
+Find more details about this repository on the Salesforce Developer blog:
+
+[Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html)
+
+[Pure Aloe Sample App Part 2: Integration with Platform Events](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html)
+
 ## Installation Instructions
 
 In the commands below, terms wrapped in \*asterisks\* signify places where you'll need to replace the dummy text we're providing with values that match your Salesforce DX setup.
