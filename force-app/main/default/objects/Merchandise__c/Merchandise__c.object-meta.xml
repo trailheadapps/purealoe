@@ -56,7 +56,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Product</label>
     <nameField>
         <displayFormat>M-{0000}</displayFormat>

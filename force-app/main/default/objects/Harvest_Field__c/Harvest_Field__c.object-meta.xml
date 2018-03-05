@@ -56,7 +56,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Harvest Field</label>
     <nameField>
         <label>Harvest Field Name</label>

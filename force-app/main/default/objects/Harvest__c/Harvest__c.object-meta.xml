@@ -48,7 +48,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <label>Harvest</label>
     <nameField>
         <displayFormat>H-{00000}</displayFormat>
