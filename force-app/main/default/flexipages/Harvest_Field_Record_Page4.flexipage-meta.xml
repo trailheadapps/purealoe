@@ -90,10 +90,16 @@
             </componentInstanceProperties>
             <componentName>flowruntime:interview</componentName>
             <visibilityRule>
+                <booleanFilter>1 AND 2</booleanFilter>
                 <criteria>
                     <leftValue>{!Record.Status__c}</leftValue>
                     <operator>NE</operator>
                     <rightValue>OK</rightValue>
+                </criteria>
+                <criteria>
+                    <leftValue>{!Record.Irrigation__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>false</rightValue>
                 </criteria>
             </visibilityRule>
         </componentInstances>
