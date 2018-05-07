@@ -1,6 +1,6 @@
 # Pure Aloe App
 
-Pure Aloe is a fictional agricultural and manufacturing company that grows aloe to make into soaps and lotions for retailers and consumers.  This app helps them manage their harvests and ensure high yields of aloe with utilization of IoT tools. Once the aloe is grown, Platform Events are used to update manufacturers and retailers about stock.
+Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update <a href="https://github.com/trailheadapps/purealoe-distributor" target="_blank">external distributor systems</a> about stock, and publish updates from those systems in Salesforce.
 
 Find more details about this repository on the Salesforce Developer blog:
 
