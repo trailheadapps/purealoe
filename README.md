@@ -1,6 +1,6 @@
 # Pure Aloe App
 
-Pure Aloe is a  sample application that demonstrates the power of the Salesforce Platform to build modern apps fast. It is a rebranded and anonymized version of the application showcased during the Dreamforce 17 developer keynote.
+Pure Aloe is a fictional agricultural and manufacturing company that grows aloe to make into soaps and lotions for retailers and consumers.  This app helps them manage their harvests and ensure high yields of aloe with utilization of IoT tools. Once the aloe is grown, Platform Events are used to update manufacturers and retailers about stock.
 
 Find more details about this repository on the Salesforce Developer blog:
 
