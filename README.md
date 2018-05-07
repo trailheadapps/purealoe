@@ -6,9 +6,9 @@ Pure Aloe is a  sample application that demonstrates the power of the Salesforce
 
 Find more details about this repository on the Salesforce Developer blog:
 
-[Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html)
+<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html" target="_blank">Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX</a>
 
-[Pure Aloe Sample App Part 2: Integration with Platform Events](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html)
+<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html" target="_blank">Pure Aloe Sample App Part 2: Integration with Platform Events</a>
 
 ## Installation Instructions
 
@@ -21,7 +21,7 @@ In the commands below, terms wrapped in \*asterisks\* signify places where you'l
 
 1. Clone the purealoe repository:
     ```
-    git clone https://github.com/dreamforce17/purealoe
+    git clone https://github.com/trailheadapps/purealoe
     cd purealoe
     ```
 
