@@ -1,14 +1,12 @@
 # Pure Aloe App
 
-[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
-
-Pure Aloe is a  sample application that demonstrates the power of the Salesforce Platform to build modern apps fast. It is a rebranded and anonymized version of the application showcased during the Dreamforce 17 developer keynote.
+Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update <a href="https://github.com/trailheadapps/purealoe-distributor" target="_blank">external distributor systems</a> about stock, and publish updates from those systems in Salesforce.
 
 Find more details about this repository on the Salesforce Developer blog:
 
-[Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html)
+<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html" target="_blank">Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX</a>
 
-[Pure Aloe Sample App Part 2: Integration with Platform Events](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html)
+<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html" target="_blank">Pure Aloe Sample App Part 2: Integration with Platform Events</a>
 
 ## Installation Instructions
 
@@ -21,7 +19,7 @@ In the commands below, terms wrapped in \*asterisks\* signify places where you'l
 
 1. Clone the purealoe repository:
     ```
-    git clone https://github.com/dreamforce17/purealoe
+    git clone https://github.com/trailheadapps/purealoe
     cd purealoe
     ```
 

@@ -23,7 +23,7 @@
             },
             "Name": "Aloe NE-3",
             "Crop__c": "Aloe",
-            "Irrigation__c": true,
+            "Irrigation__c": false,
             "Map_Id__c": "3",
             "Picture_URL__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png",
             "Sensor_Id__c": "3",

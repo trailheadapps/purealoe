@@ -77,10 +77,10 @@
                                 <lightning:input type="toggle" checked="{!v.harvestField.Irrigation__c}" label="Irrigation" onchange="{!c.toggleChangeHandler}" class="irrigation-toggle"/>
                             </lightning:layoutItem>
                         </lightning:layout>
-                        <lightning:datatable data="{!v.irrigationHistory}" columns="{!v.irrigationColumns}" />
+                        <lightning:datatable data="{!v.irrigationHistory}" columns="{!v.irrigationColumns}" keyField="id"/>
                     </lightning:accordionSection>
                     <lightning:accordionSection label="Harvests">
-                        <lightning:datatable data="{!v.harvests}" columns="{!v.harvestColumns}" />
+                        <lightning:datatable data="{!v.harvests}" columns="{!v.harvestColumns}" keyField="id"/>
                     </lightning:accordionSection>
                     <lightning:accordionSection label="More Info">
                     </lightning:accordionSection>
