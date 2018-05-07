@@ -9,12 +9,10 @@
     <label>Pure Aloe</label>
     <navType>Standard</navType>
     <tabs>standard-Feed</tabs>
-    <tabs>standard-Account</tabs>
     <tabs>Field_Management</tabs>
     <tabs>Harvest__c</tabs>
     <tabs>Merchandise__c</tabs>
     <tabs>Bundle__c</tabs>
-    <tabs>standard-Contact</tabs>
     <tabs>Harvest_Field__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>PureAloe_UtilityBar</utilityBar>
