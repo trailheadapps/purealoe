@@ -123,10 +123,12 @@
 
             var selectedRecord;
             var fields = component.get("v.harvestFields");
-            for (var i=0; i<fields.length; i++) {
-                if (fieldId == 'field' + fields[i].Map_Id__c) {
-                    selectedRecord = fields[i];
-                }
+            if(fields){
+                for (var i=0; i<fields.length; i++) {
+                    if (fieldId == 'field' + fields[i].Map_Id__c) {
+                        selectedRecord = fields[i];
+                    }
+                } 
             }
 
             if (selectedRecord) {
