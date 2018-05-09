@@ -6,7 +6,7 @@
             var cometd = new window.org.cometd.CometD();
             component.cometd = cometd;
             cometd.configure({
-                url: window.location.protocol + '//' + window.location.hostname + '/cometd/41.0/',
+                url: window.location.protocol + '//' + window.location.hostname + '/cometd/42.0/',
                 requestHeaders: { Authorization: 'OAuth ' + sessionId},
                 logLevel: 'debug',
                 appendMessageTypeToURL : false

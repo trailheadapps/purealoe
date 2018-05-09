@@ -4,7 +4,7 @@
         <name>utilityItems</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Karibu UtilityBar</masterLabel>
+    <masterLabel>PureAloe UtilityBar</masterLabel>
     <template>
         <name>one:utilityBarTemplateDesktop</name>
     </template>

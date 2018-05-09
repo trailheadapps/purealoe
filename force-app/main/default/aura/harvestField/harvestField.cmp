@@ -85,7 +85,7 @@
                     <lightning:accordionSection label="More Info">
                     </lightning:accordionSection>
                 </lightning:accordion>
-                <img src="{!$Resource.karibu + '/ground_' + v.harvestField.Status__c + '.png'}" class="ground" />
+                <img src="{!$Resource.purealoe + '/ground_' + v.harvestField.Status__c + '.png'}" class="ground" />
             </lightning:card>
     
             <aura:set attribute="else">

@@ -11,16 +11,16 @@
     <aura:registerEvent name="stepChange" type="c:PathStepChange"/>
     
 	<div class="slds-grid">
-		<div class="slds-tabs--path" role="application">
-			<ul class="slds-tabs--path__nav" role="tablist">
+		<div class="slds-tabs_path" role="application">
+			<ul class="slds-tabs_path__nav" role="tablist">
                 <aura:iteration items="{!v.steps}" var="step" indexVar="index">
-                    <li class="{! 'slds-tabs--path__item ' + (index&lt;v.stepIndex ? 'slds-is-complete' : (index==v.stepIndex ? 'slds-is-current' : 'slds-is-incomplete'))}" role="presentation">
-                        <a class="slds-tabs--path__link" data-step="{!step}" onclick="{!c.onStepClicked}">
-                          <span class="slds-tabs--path__stage">
+                    <li class="{! 'slds-tabs_path__item ' + (index&lt;v.stepIndex ? 'slds-is-complete' : (index==v.stepIndex ? 'slds-is-current' : 'slds-is-incomplete'))}" role="presentation">
+                        <a class="slds-tabs_path__link" data-step="{!step}" onclick="{!c.onStepClicked}">
+                          <span class="slds-tabs_path__stage">
                               <lightning:icon iconName="utility:check" size="x-small" class="process-icon"/>
                             <span class="slds-assistive-text">Stage Complete</span>
                           </span>
-                          <span class="slds-tabs--path__title">{!step}</span>
+                          <span class="slds-tabs_path__title">{!step}</span>
                         </a>
                     </li>
                 </aura:iteration>                    
