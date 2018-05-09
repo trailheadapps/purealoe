@@ -6,27 +6,27 @@
         <lightning:layout>
             <lightning:layoutItem flexibility="grow" class="center">
                 <lightning:button variant="base" onclick="{!c.onClick}">
-                        <img src="{!$Resource.karibu + '/icon_irrigation.svg'}" class="icon" />
+                        <img src="{!$Resource.purealoe + '/icon_irrigation.svg'}" class="icon" />
                 </lightning:button>
             </lightning:layoutItem>
             <lightning:layoutItem flexibility="grow" class="center">
                     <lightning:button variant="base">
-                    <img src="{!$Resource.karibu + '/icon_seed.svg'}" class="icon" />
+                    <img src="{!$Resource.purealoe + '/icon_seed.svg'}" class="icon" />
                 </lightning:button>
             </lightning:layoutItem>
             <lightning:layoutItem flexibility="grow" class="center">
                     <lightning:button variant="base">
-                    <img src="{!$Resource.karibu + '/icon_level.svg'}" class="icon" />
+                    <img src="{!$Resource.purealoe + '/icon_level.svg'}" class="icon" />
                 </lightning:button>
             </lightning:layoutItem>
             <lightning:layoutItem flexibility="grow" class="center">
                     <lightning:button variant="base">
-                    <img src="{!$Resource.karibu + '/icon_labor.svg'}" class="icon" />
+                    <img src="{!$Resource.purealoe + '/icon_labor.svg'}" class="icon" />
                 </lightning:button>
             </lightning:layoutItem>
             <lightning:layoutItem flexibility="grow" class="center">
                     <lightning:button variant="base">
-                    <img src="{!$Resource.karibu + '/icon_bug.svg'}" class="icon" />
+                    <img src="{!$Resource.purealoe + '/icon_bug.svg'}" class="icon" />
                 </lightning:button>
             </lightning:layoutItem>
         </lightning:layout>

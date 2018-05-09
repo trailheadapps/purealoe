@@ -13,7 +13,7 @@
     <lightning:card>
         
         <aura:set attribute="title">
-            <img src="{!$Resource.karibu + '/aloe.png'}" class="icon" /> {! 'Merchandise List (' + v.total + ')'}
+            <img src="{!$Resource.purealoe + '/aloe.png'}" class="icon" /> {! 'Merchandise List (' + v.total + ')'}
         </aura:set>
 
         <aura:set attribute="actions">

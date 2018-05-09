@@ -13,11 +13,11 @@
     onRecordUpdated: function (component, event) {
         var changeType = event.getParams().changeType;
         if (changeType === "LOADED") {
-            component.find("accountService").reloadRecord();
+            component.find("accountService").reloadRecord();          
         } else if (changeType === "CHANGED") {
             component.find("bundleRecord").reloadRecord();
             component.find("accountService").reloadRecord();
-        }
+        } 
     },
 
     messageHandler: function (component, event) {
