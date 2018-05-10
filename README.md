@@ -2,21 +2,22 @@
 
 [![CircleCI](https://circleci.com/gh/trailheadapps/purealoe.svg?style=svg)](https://circleci.com/gh/trailheadapps/purealoe)
 
-Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update <a href="https://github.com/trailheadapps/purealoe-distributor" target="_blank">external distributor systems</a> about stock, and publish updates from those systems in Salesforce.
+Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update [external distributor systems](https://github.com/trailheadapps/purealoe-distributor) about stock, and publish updates from those systems in Salesforce.
 
-Find more details about this repository on the Salesforce Developer blog:
+Find more details about Pure Aloe on the Salesforce Developer blog:
 
-<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html" target="_blank">Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX</a>
+[Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html)
 
-<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html" target="_blank">Pure Aloe Sample App Part 2: Integration with Platform Events</a>
+[Pure Aloe Sample App Part 2: Integration with Platform Events](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html)
+
+[Spring 18 for Developers: Go With the Flow Like Never Before](https://developer.salesforce.com/blogs/2018/01/spring-18-for-developers-flow.html)
+
 
 ## Table of Contents
 
-
-*   [Installation Instructions] (#installation-instructions)
+*   [Intallation Instructions](#installation-instructions)
     *   [Install Pure Aloe with Salesforce DX](#salesforce-dx)
     *   [Install Pure Aloe as an unlocked package](#unlocked-package)
-*   [Code Highlights](#code-highlights)
 *   [Additional Resources](#additional-resources)
 
 
@@ -90,3 +91,7 @@ Use this option if you don't have Salesforce DX configured or if you want to exp
 1. In **App Launcher**, select the **PureAloe** app
 
 1. Have fun exploring!
+
+## Additional Resources
+
+To explore how Pure Aloe uses Platform Events to integrate with external systems, download and configure the [Pure Aloe distributor app](https://github.com/trailheadapps/purealoe-distributor).
