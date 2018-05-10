@@ -1,0 +1,21 @@
+Crop__c,Irrigation_Overrides__c,Irrigation__c,Map_Id__c,Name,Picture_URL__c,Sensor_Id__c,Size__c,Status__c,Yield__c
+Aloe,3,FALSE,3,Aloe NE-3,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,3,3 acres,Alert,200
+Pumpkin,12,FALSE,9,Pumpkin NE-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png,9,3 acres,Warning,25
+Pumpkin,9,FALSE,16,Pumpkin NE-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png,16,2 acres,OK,25
+Kale,0,FALSE,12,Kale NW-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png,12,1 acre,OK,75
+Aloe,12,FALSE,2,Aloe NE-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,2,2 acres,Warning,90
+Aloe,0,TRUE,5,Aloe NW-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,5,3 acres,OK,120
+Kale,8,FALSE,17,Kale NE-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png,17,2 acres,Warning,70
+Aloe,6,FALSE,18,Aloe SE-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,18,2 acres,OK,55
+Aloe,0,FALSE,20,Aloe SE-3,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,20,6 acres,OK,30
+Eggplant,10,TRUE,13,Eggplant NE-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png,13,3 acres,Warning,80
+Eggplant,0,FALSE,14,Eggplant NW-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png,14,1 acre,OK,84
+Aloe,0,FALSE,1,Aloe NE-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,1,2 acres,OK,100
+Aloe,12,TRUE,6,Aloe NW-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,6,2 acres,OK,35
+Aloe,0,TRUE,4,Aloe NE-4,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,4,3 acres,OK,75
+Kale,9,FALSE,11,Kale NE-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_kale.png,11,4 acres,OK,60
+Aloe,0,TRUE,8,Aloe NW-4,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,8,2 acres,OK,50
+Aloe,0,TRUE,7,Aloe NW-3,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,7,2 acres,OK,40
+Eggplant,10,TRUE,15,Eggplant NE-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_eggplant.png,15,2 acres,OK,60
+Aloe,0,FALSE,19,Aloe SE-2,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_aloe4.png,19,2 acres,OK,10
+Pumpkin,11,TRUE,10,Pumpkin NW-1,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/crop_pumpkin.png,10,4 acres,Alert,120
