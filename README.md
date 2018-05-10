@@ -10,8 +10,19 @@ Find more details about this repository on the Salesforce Developer blog:
 
 <a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html" target="_blank">Pure Aloe Sample App Part 2: Integration with Platform Events</a>
 
+## Table of Contents
+
+
+*   [Installation Instructions] (#installation-instructions)
+    *   [Install Pure Aloe with Salesforce DX](#salesforce-dx)
+    *   [Install Pure Aloe as an unlocked package](#unlocked-package)
+*   [Code Highlights](#code-highlights)
+*   [Additional Resources](#additional-resources)
+
+
 ## Installation Instructions
 
+### Salesforce DX
 In the commands below, terms wrapped in \*asterisks\* signify places where you'll need to replace the dummy text we're providing with values that match your Salesforce DX setup.
 
 1. Authenticate with your hub org (if not already done)
@@ -50,3 +61,32 @@ In the commands below, terms wrapped in \*asterisks\* signify places where you'l
     ```
     sfdx force:org:open
     ```
+
+### Unlocked Package
+Use this option if you don't have Salesforce DX configured or if you want to experience the sample app and do not plan to modify the code.
+
+1. [Sign up](https://developer.salesforce.com/signup) for a Developer Edition (DE) org.
+
+1. Enable MyDomain in your DE org. Instructions to do this are [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
+
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036qZKQAY) to install the Pure Aloe unlocked package into your DE org.
+
+1. Select **Install for All Users**
+
+1. Import Harvest Field data:
+    - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
+    - Click **Launch Wizard**.
+    - Click the **Custom objects** tab, click **Harvest Fields**, and click **Add New Records**.
+    - Drag **Harvest_Fields_Data.csv** from the data folder of this project to the upload area.
+    - Click **Next**, **Next**, and **Start Import**.
+
+1. Import Merchandise data:
+    - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
+    - Click **Launch Wizard**.
+    - Click the **Custom objects** tab, click **Merchandise**, and click **Add New Records**.
+    - Drag **Merchandise_Data.csv** from the data folder of this project to the upload area.
+    - Click **Next**, **Next**, and **Start Import**.
+
+1. In **App Launcher**, select the **PureAloe** app
+
+1. Have fun exploring!

@@ -1,0 +1,7 @@
+Category__c,Description__c,IsDeleted,Name,Picture_URL__c,Price__c,Title__c
+Gear,"Have one 3-pack of soap mailed to you every quarter. That's a total of twelve soap bars (1 bar per month). 
+Your purchase will fund a student's STEM program fees for fourteen months.",FALSE,M-0000,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/subscription.png,100,Soap Subscription
+Gear,"Handmade in small batches with all natural ingredients sourced within Africa. 1 individually wrapped bar. 
+Ingredients - shea butter, coconut oil, avocado oil, pure aloe vera extract, African croton seed oil, natural soap base, and essential oils: orange, bergamot, geranium, and lemongrass.",FALSE,M-0001,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/aloe3.png,10,Aloe Vera Soap Bar
+Gear,,FALSE,M-0002,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/box.png,100,Soap Box
+Gear,"Handmade in small batches with all natural ingredients sourced within Africa. Set of 3 individually wrapped soap bars. Ingredients - shea butter, coconut oil, avocado oil, pure aloe vera extract, African croton seed oil, natural soap base, and essential oils: orange, bergamot, geranium, and lemongrass.",FALSE,M-0003,https://s3-us-west-1.amazonaws.com/sfdc-demo/karibu/aloe1.png,25,Aloe Vera Soap (pack of 3)
