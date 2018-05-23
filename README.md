@@ -1,15 +1,29 @@
-# Pure Aloe App
+# Pure Aloe Sample App
 
-Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update <a href="https://github.com/trailheadapps/purealoe-distributor" target="_blank">external distributor systems</a> about stock, and publish updates from those systems in Salesforce.
+[![CircleCI](https://circleci.com/gh/trailheadapps/purealoe.svg?style=svg)](https://circleci.com/gh/trailheadapps/purealoe)
 
-Find more details about this repository on the Salesforce Developer blog:
+Pure Aloe is a fictional agricultural and manufacturing company that grows aloe and produces soaps and lotions for distributors and consumers. This app helps manage crops and harvests, as well as product distribution. Platform Events are used to update [external distributor systems](https://github.com/trailheadapps/purealoe-distributor) about stock, and publish updates from those systems in Salesforce.
 
-<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html" target="_blank">Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX</a>
+Find more details about Pure Aloe on the Salesforce Developer blog:
 
-<a href="https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html" target="_blank">Pure Aloe Sample App Part 2: Integration with Platform Events</a>
+[Pure Aloe Sample App Part 1: Lightning Components & Salesforce DX](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-application-part-1-lightning-components-salesforce-dx.html)
+
+[Pure Aloe Sample App Part 2: Integration with Platform Events](https://developer.salesforce.com/blogs/2017/11/pure-aloe-sample-app-part-2-integration-platform-events.html)
+
+[Spring 18 for Developers: Go With the Flow Like Never Before](https://developer.salesforce.com/blogs/2018/01/spring-18-for-developers-flow.html)
+
+
+## Table of Contents
+
+*   [Intallation Instructions](#installation-instructions)
+    *   [Install Pure Aloe with Salesforce DX](#salesforce-dx)
+    *   [Install Pure Aloe as an unlocked package](#unlocked-package)
+*   [Additional Resources](#additional-resources)
+
 
 ## Installation Instructions
 
+### Salesforce DX
 In the commands below, terms wrapped in \*asterisks\* signify places where you'll need to replace the dummy text we're providing with values that match your Salesforce DX setup.
 
 1. Authenticate with your hub org (if not already done)
@@ -48,3 +62,36 @@ In the commands below, terms wrapped in \*asterisks\* signify places where you'l
     ```
     sfdx force:org:open
     ```
+
+### Unlocked Package
+Use this option if you don't have Salesforce DX configured or if you want to experience the sample app and do not plan to modify the code.
+
+1. [Sign up](https://developer.salesforce.com/signup) for a Developer Edition (DE) org.
+
+1. Enable MyDomain in your DE org. Instructions to do this are [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
+
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036qZKQAY) to install the Pure Aloe unlocked package into your DE org.
+
+1. Select **Install for All Users**
+
+1. Import Harvest Field data:
+    - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
+    - Click **Launch Wizard**.
+    - Click the **Custom objects** tab, click **Harvest Fields**, and click **Add New Records**.
+    - Drag **Harvest_Fields_Data.csv** from the data folder of this project to the upload area.
+    - Click **Next**, **Next**, and **Start Import**.
+
+1. Import Merchandise data:
+    - In **Setup**, type **Data Import** in the Quick Find box and click **Data Import Wizard**.
+    - Click **Launch Wizard**.
+    - Click the **Custom objects** tab, click **Merchandise**, and click **Add New Records**.
+    - Drag **Merchandise_Data.csv** from the data folder of this project to the upload area.
+    - Click **Next**, **Next**, and **Start Import**.
+
+1. In **App Launcher**, select the **PureAloe** app
+
+1. Have fun exploring!
+
+## Additional Resources
+
+To explore how Pure Aloe uses Platform Events to integrate with external systems, download and configure the [Pure Aloe distributor app](https://github.com/trailheadapps/purealoe-distributor).

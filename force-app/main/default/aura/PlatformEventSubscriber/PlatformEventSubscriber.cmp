@@ -2,7 +2,7 @@
     
     <aura:attribute name="channel" type="String" />
     
-    <ltng:require scripts="{!$Resource.cometd + '/cometd.js'}"
+    <ltng:require scripts="{!$Resource.cometd}"
                   afterScriptsLoaded="{!c.onJSLoaded}" />
 
     <!-- <ltng:require scripts="{!join(',',
