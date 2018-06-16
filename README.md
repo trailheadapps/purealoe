@@ -15,15 +15,15 @@ Find more details about Pure Aloe on the Salesforce Developer blog:
 
 ## Table of Contents
 
-*   [Intallation Instructions](#installation-instructions)
-    *   [Install Pure Aloe with Salesforce DX](#salesforce-dx)
-    *   [Install Pure Aloe as an unlocked package](#unlocked-package)
+*   [Installation](#installation)
+    *   [Installing Pure Aloe using Salesforce DX](#installing-pure-aloe-using-salesforce-dx)
+    *   [Installing Pure Aloe using an unlocked package](#installing-pure-aloe-using-an-unlocked-package)
 *   [Additional Resources](#additional-resources)
 
 
-## Installation Instructions
+## Installation
 
-### Salesforce DX
+### Installing Pure Aloe using Salesforce DX
 In the commands below, terms wrapped in \*asterisks\* signify places where you'll need to replace the dummy text we're providing with values that match your Salesforce DX setup.
 
 1. Authenticate with your hub org (if not already done)
@@ -63,7 +63,7 @@ In the commands below, terms wrapped in \*asterisks\* signify places where you'l
     sfdx force:org:open
     ```
 
-### Unlocked Package
+### Installing Pure Aloe using an unlocked package
 Use this option if you don't have Salesforce DX configured or if you want to experience the sample app and do not plan to modify the code.
 
 1. [Sign up](https://developer.salesforce.com/signup) for a Developer Edition (DE) org.
