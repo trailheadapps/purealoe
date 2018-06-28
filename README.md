@@ -92,6 +92,18 @@ Use this option if you don't have Salesforce DX configured or if you want to exp
 
 1. Have fun exploring!
 
-## Additional Resources
+## Distributor App
 
 To explore how Pure Aloe uses Platform Events to integrate with external systems, download and configure the [Pure Aloe distributor app](https://github.com/trailheadapps/purealoe-distributor).
+
+When you create a Product Bundle in Salesforce and change its status to **Submitted to Distributors**, the **Bundle Submitted** process automatically publishes the **Bundle_Submitted__e** platform event. The distributor app is listening for that event and automatically adds the product bundle to the bundle list when a **Bundle_Submitted__e** event comes in.
+
+When you click the **Order** button next to a bundle in the distributor app, the distributor app publishes a **Bundle_Ordered__e** event. The **Bundle Ordered** process (in Process Builder) listens for that event and automatically changes the order status to **Ordered by Distributor** when an event comes in. If a user is looking at the record details page for that bundle, the status will automatically change (no page refresh required) because the status path component is using the Streaming API to listen for status changes. For this last part to work, you need to execute the following Salesforce DX command to create the Streaming API topic:
+
+```
+sfdx force:apex:execute -f ./apex/createPushTopic.apex
+```
+
+Take a look at the `createPushTopic.apex` file in the `/apex` folder to examine the push topic creation logic.
+
+Note that you could also have listened directly for the platform event in the status path component and update the status to **Ordered by Distributor** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Bundle Ordered** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Ordered by Distributor**, while the status in the database would still be **Submitted to Distributor**. 
