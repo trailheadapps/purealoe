@@ -70,7 +70,7 @@ Use this option if you don't have Salesforce DX configured or if you want to exp
 
 1. Enable MyDomain in your DE org. Instructions to do this are [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036qZKQAY) to install the Pure Aloe unlocked package into your DE org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036seBQAQ) to install the Pure Aloe unlocked package into your DE org.
 
 1. Select **Install for All Users**
 
@@ -106,4 +106,4 @@ sfdx force:apex:execute -f ./apex/createPushTopic.apex
 
 Take a look at the `createPushTopic.apex` file in the `/apex` folder to examine the push topic creation logic.
 
-Note that you could also have listened directly for the platform event in the status path component and update the status to **Ordered by Distributor** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Bundle Ordered** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Ordered by Distributor**, while the status in the database would still be **Submitted to Distributor**. 
+Note that you could also have listened directly for the platform event in the status path component and update the status to **Ordered by Distributor** in the UI when the event comes in. However, that approach could lead to inconsistencies in case the server-side status update (handled by the **Bundle Ordered** process) fails, because a validation rule is not met for example. In that case the UI would show the status as **Ordered by Distributor**, while the status in the database would still be **Submitted to Distributor**.
