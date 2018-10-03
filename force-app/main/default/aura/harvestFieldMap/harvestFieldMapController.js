@@ -1,5 +1,8 @@
 ({
     onInit : function(component, event, helper) {
+
+        helper.subscribe(component);
+
         component.selectedFields = [];
         component.selectedRecords = [];
         // Initialize CSS transform values
@@ -176,21 +179,6 @@
 
     harvestFieldsChange : function(component, event, helper) {
     	helper.renderFields(component);   
-    },
-    
-    messageHandler : function(component, event, helper) {
-        var payload = event.getParam("message");
-        console.log(payload.Field_Id__c);
-        var fields = component.get("v.harvestFields");
-        for (var i=0; i<fields.length; i++) {
-            console.log(fields[i].Id);
-            if (fields[i].Id == payload.Field_Id__c ) {
-				fields[i].Status__c = payload.Status__c;
-                helper.renderFields(component);
-                break;
-            }
-        }
     }
     
-
 })

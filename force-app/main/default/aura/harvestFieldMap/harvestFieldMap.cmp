@@ -1,6 +1,9 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     
         <aura:attribute name="harvestFields" type="Object[]" access="global"/>
+        <aura:attribute name="recordId" type="Id" />
+        <aura:attribute name="selectedRecord" type="Harvest_Field__c" />
+        <aura:attribute name="channel" type="String" default="Field_Status_Change__e" />
     
         <aura:handler name="change" value="{!v.harvestFields}" action="{!c.harvestFieldsChange}"/>
         <aura:handler event="c:irrigationChange" action="{!c.onIrrigationChange}"/>
@@ -9,18 +12,13 @@
         <aura:registerEvent name="selectSObject" type="ltng:selectSObject"/>
         <aura:registerEvent name="onselectionchange" type="c:recordSelectionChange" />
     
-        <aura:attribute name="recordId" type="Id" />
-        <aura:attribute name="selectedRecord" type="Harvest_Field__c" />
-    
         <force:recordData aura:id="service" 
             recordId="{!v.recordId}"
             targetFields="{!v.selectedRecord}"
             fields="['Id', 'Name', 'Status__c', 'Map_Id__c', 'Irrigation__c']"
-            recordUpdated="{!c.recordUpdatedHandler}"/>
+            recordUpdated="{!c.recordUpdatedHandler}" />
     
-        <!--
-            <c:PlatformEventSubscriber eventName="Field_Status_Change__e" onMessage="{!c.messageHandler}"/>
-        -->
+        <lightning:empApi aura:id="empApi" />                      
     
         <div aura:id="container" class="slds-hide">
     
