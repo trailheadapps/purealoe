@@ -1,7 +1,6 @@
 ({
     loadBundleItems: function (component, bundleId) {
         var action = component.get("c.getBundleItems");
-        action.setStorable();
         action.setParams({
             "bundleId": bundleId
         });

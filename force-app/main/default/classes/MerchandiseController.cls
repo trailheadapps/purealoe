@@ -44,7 +44,7 @@ global with sharing class MerchandiseController {
         
     }
     
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static PagedResult getMerchandise(String filters, Decimal pageSize, Decimal pageNumber) {
         Filter filter = (Filter) JSON.deserializeStrict(filters, MerchandiseController.Filter.class);
         Integer pSize = (Integer)pageSize;
