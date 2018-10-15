@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <status>ACTIVE</status>
     <actionCalls>
         <name>eventContextErrorEmail</name>
         <label>Context Error Email</label>
@@ -446,7 +447,7 @@
     <textTemplates>
         <description>text template for when multiple records are records found</description>
         <name>multipleRecordsFoundTextTemplate</name>
-        <text>Hello {!OrganizationName} Admin, 
+        <text>Hello {!OrganizationName} Admin,
 
 The Bundle Ordered process is configured to start when a Bundle Ordered platform event message occurs. A Bundle Ordered message occurred, but the process didn&apos;t start because multiple records in your org match the values specified in the process&apos;s Object node.
 
@@ -455,13 +456,13 @@ Bundle Id: {!myVariable_myEvent.Bundle_Id__c}
 
 To fix this issue, adjust the matching filters in the process&apos;s Object node.
 
-Thank you, 
+Thank you,
 Salesforce Process Automation</text>
     </textTemplates>
     <textTemplates>
         <description>text template for no records found</description>
         <name>noRecordsFoundTextTemplate</name>
-        <text>Hello {!OrganizationName} Admin, 
+        <text>Hello {!OrganizationName} Admin,
 
 The Bundle Ordered process is configured to start when a Bundle Ordered platform event message occurs. A Bundle Ordered message occurred, but the process didn&apos;t start because no records in your org match the values specified in the process&apos;s Object node.
 
@@ -470,7 +471,7 @@ Bundle Id: {!myVariable_myEvent.Bundle_Id__c}
 
 To fix this issue, adjust the matching filters in the process&apos;s Object node.
 
-Thank you, 
+Thank you,
 Salesforce Process Automation</text>
     </textTemplates>
     <variables>
