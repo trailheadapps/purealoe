@@ -4,15 +4,17 @@
             "path": "force-app",
             "default": true,
             "package": "purealoe",
-            "versionNumber": "2.0.0.NEXT",
-            "versionName": "Summer '18"
+            "versionNumber": "3.0.0.NEXT",
+            "versionName": "Winter '19"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "43.0",
+    "sourceApiVersion": "44.0",
     "packageAliases": {
         "purealoe": "0Ho1I000000XZC3SAO",
-        "purealoe@2.0.0-1": "04t1I0000036seBQAQ"
+        "purealoe@2.0.0-1": "04t1I0000036seBQAQ",
+        "purealoe@3.0.0-1": "04t1I0000036tXbQAI",
+        "purealoe@3.0.0-2": "04t1I0000036tYPQAY"
     }
 }

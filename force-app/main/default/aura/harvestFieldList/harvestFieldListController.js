@@ -12,7 +12,6 @@
         component.set("v.columns", columns);
 
         var action = component.get("c.getHarvestFields");
-        //action.setStorable();
         action.setCallback(this, function (response) {
             console.log('getHarvestFields: ' + (performance.now() - startTime));
             var fields = response.getReturnValue();

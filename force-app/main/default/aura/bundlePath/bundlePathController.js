@@ -1,4 +1,20 @@
 ({
+    subscribe: function (component, event) {
+        var empApi = component.find("empApi");
+        var channel = component.get("v.channel");
+        var replayId = -2;
+        empApi.subscribe(channel, replayId, $A.getCallback(function (message) {
+            var bundle = component.get("v.record");
+            if (message && message.data && message.data.sobject) {
+                var bundleId = message.data.sobject.Id;
+                var status = message.data.sobject.Status__c;
+                if (bundleId === bundle.Id && status !== bundle.Status__c) {
+                    component.find("bundleRecord").reloadRecord(true);
+                }
+            }
+        }));        
+    },
+
     onStepChange: function (component, event) {
         var bundle = component.get("v.record");
         if (bundle) {
@@ -18,31 +34,6 @@
             component.find("bundleRecord").reloadRecord();
             component.find("accountService").reloadRecord();
         } 
-    },
-
-    messageHandler: function (component, event) {
-        console.log('bundlePathController got message');
-        try {
-            var bundle = component.get("v.record");
-            var message = event.getParam("message");
-            if (message && message.data && message.data.sobject) {
-                var bundleId = message.data.sobject.Id;
-                var status = message.data.sobject.Status__c;
-                console.log(status);
-                if (bundleId === bundle.Id && status !== bundle.Status__c) {
-                    //bundle.Status__c = status;
-                    //bundle.Account__c = payload.Account_Id__c;
-                    //bundle.Date_Ordered__c = new Date().toLocaleDateString();
-                    //component.set("v.record", bundle);
-                    component.find("bundleRecord").reloadRecord(true);
-                    //component.find("accountService").reloadRecord();
-                    // No need to save the record because there is also an Apex listener for the Bundle_Ordered__e event
-                }
-            }
-        } catch (e) {
-            console.log("*** Exception");
-            console.log(e);
-        }
     }
 
 })

@@ -1,5 +1,21 @@
 ({
-    
+        subscribe: function (component) {
+            var empApi = component.find("empApi");
+            var channel = component.get("v.channel");
+            var replayId = -2;
+            empApi.subscribe(channel, replayId, $A.getCallback(function (message) {
+                var fields = component.get("v.harvestFields");
+                for (var i=0; i<fields.length; i++) {
+                    console.log(fields[i].Id);
+                    if (fields[i].Id == message.Field_Id__c ) {
+                        fields[i].Status__c = message.Status__c;
+                        this.renderFields(component);
+                        break;
+                    }
+                }
+            }));        
+        },
+
         transform: function (component) {
             var svgWrapper = component.find("svgWrapper").getElement();
             svgWrapper.style.transform = "translate3d(" + component.translateX + "px," + component.translateY + "px, 0) " +

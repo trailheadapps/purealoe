@@ -7,6 +7,7 @@
     <aura:attribute name="account" type="Object" />
     <aura:attribute name="steps" type="String[]" default="['Draft', 'Submitted to Distributors', 'Ordered by Distributor', 'Shipped']" />
     <aura:attribute name="pathName" type="String" access="global"/>
+    <aura:attribute name="channel" type="String" default="/topic/BundleStatusChange" />
     
     <force:recordData aura:id="bundleRecord"
                       recordId="{!v.recordId}"
@@ -20,7 +21,10 @@
                       targetFields="{!v.account}"
 					  fields="['Id', 'Name']" />
 
-    <c:PlatformEventSubscriber channel="/topic/BundleStatusChange" onMessage="{!c.messageHandler}"/>
+    <lightning:empApi aura:id="empApi" />                      
+    
+    <aura:handler name="init" value="{!this}" action="{!c.subscribe}" />
+
     <div class="slds-card">
         <c:path steps="{!v.steps}" currentStep="{!v.record.Status__c}" stepChange="{!c.onStepChange}"/>
 
@@ -31,4 +35,5 @@
             </lightning:layout>
         </aura:if>
     </div>
+
 </aura:component>

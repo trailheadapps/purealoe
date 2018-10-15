@@ -1,6 +1,6 @@
 global with sharing class MerchandiseController {
     
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static List<String> getCategories() {
         Schema.DescribeFieldResult result = Merchandise__c.Category__c.getDescribe();
         List<Schema.PicklistEntry> entries = result.getPicklistValues();
@@ -44,7 +44,7 @@ global with sharing class MerchandiseController {
         
     }
     
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static PagedResult getMerchandise(String filters, Decimal pageSize, Decimal pageNumber) {
         Filter filter = (Filter) JSON.deserializeStrict(filters, MerchandiseController.Filter.class);
         Integer pSize = (Integer)pageSize;
@@ -65,7 +65,7 @@ global with sharing class MerchandiseController {
         return r;
     }
     
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static Merchandise__c[] getAllMerchandise() {
         return [SELECT id, Name, Title__c, Description__c, Price__c, Category__c, Picture_URL__c 
                     FROM Merchandise__c];
