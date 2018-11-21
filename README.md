@@ -70,7 +70,7 @@ Use this option if you don't have Salesforce DX configured or if you want to exp
 
 1. Enable MyDomain in your DE org. Instructions to do this are [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036tYPQAY) to install the Pure Aloe unlocked package into your DE org.
+1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1I0000036u9DQAQ) to install the Pure Aloe unlocked package into your DE org.
 
 1. Select **Install for All Users**
 
